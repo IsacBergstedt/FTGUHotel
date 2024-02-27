@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Stockholm - Gallery</title>
+    <link rel="stylesheet" href="rooms.css">
+    <!--Bibliotek för sociala medier ikoner-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    
+</head>
+<body>
+
+
+    <header class="header">
+        
+        <div class="container">
+            <img class="logo" src="bilder/hotellogga.png">
+            <nav class="nav">
+                <a href="hotel.html">Home</a>
+                <a href="rooms.html">Rooms</a>
+                <a href="gallery.html">Gallery</a>
+                <a href="#contact">Contact</a>
+                <div class="socialamedier">
+                <div class="social-media">
+                    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.twitter.com"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+                </div>
+                
+            </nav>
+        </div>
+    </header>
+
+    <!-- Gallery sektion -->
+    
+<section id="gallery" class="section">
+    <hr>
+    <div class="container">            
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="bilder/hotelrumstandard.jpg" alt="Gallery Image 1">
+                <div class="room-description">
+                    <h2>Standard</h2>
+                    <p>Comfortable and cozy standard room.</p>
+                    <div class="button-container">
+                        <button class="button">Book now</button>
+                    </div>
+                </div>
+            </div>
+           
+            
+        </div>
+        <hr>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="bilder/hotelrumpremium.jpg" alt="Gallery Image 2">
+                <div class="room-description">
+                    <h2>Premium</h2>
+                    <p>Spacious and elegant premium room with extra amenities.</p>
+                    <div class="button-container">
+                        <button class="button">Book now</button>
+                    </div>
+                </div>
+            </div>
+            
+            
+        </div>
+        <hr>
+        
+        <div class="gallery">
+            <div class="gallery-item">
+                <img src="bilder/hotelrumluxury.jpg" alt="Gallery Image 3">
+                <div class="room-description">
+                    <h2>Premium luxury</h2>
+                    <p>Luxurious premium suite with breathtaking views and exclusive services.</p>
+                    <div class="button-container">
+                        <button class="button">Book now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <br>
+    <div class="roominfo"
+        <p> All rooms inlcude free access to all facilities, breakfast, wifi and 24/7 room service!</p>
+    </div>
+    
+    <div class="button-container">
+        <a href="bilder.html"><button class="button">View more</button>
+        </a>
+    </div>
+
+</section>
+
+
+
+
+    <footer class="footer">
+        <div class="container-footer">
+            <section id="contact" class="section">
+                <div class="container-footer">
+                    <h2>Contact Us</h2>
+                    <b>We are here to assist you. Reach out to us for any inquiries.</b>
+                    <br>
+                    <br>
+                    <ul>
+                        <li>HotelStockholm@hotels.com</li>
+                        <li>or</li>
+                        <li>+46 708 123 123 </li>
+                        <li>Phone available during reception opening hours 06-23</li>
+                        
+
+
+                    </ul>
+                </div>
+            </section>
+            <p>&copy; 2024 Hotel Stockholm. All rights reserved.</p>
+        </div>
+    </footer>
+
+
+    <!-- Modal -->
+    <div id="bookingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Booking Form</h2>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="room-type">Room Type:</label>
+                <select id="room-type" name="room-type">
+                    <option value="standard">Standard</option>
+                    <option value="premium">Premium</option>
+                    <option value="premium-luxury">Premium Luxury</option>
+                </select>
+
+                <label for="checkin-date">Check-in Date:</label>
+                <input type="date" id="checkin-date" name="checkin-date" required>
+                <br>
+                <br>
+                <label for="checkout-date">Check-out Date:</label>
+                <input type="date" id="checkout-date" name="checkout-date" required>
+                <br>
+                <br>
+                <label for="message">Message (Optional):</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <script src="jshotel.js"></script>
+
+</body>
+</html>

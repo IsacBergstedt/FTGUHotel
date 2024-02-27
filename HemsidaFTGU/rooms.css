@@ -1,0 +1,366 @@
+body {
+    margin:0;
+    font-family: Arial, sans-serif;
+    padding: 0px;
+    position: relative;
+    background-color: #351d09; 
+    background-image: url('bilder/bild4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+        
+.header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    border-top: 20px solid transparent; 
+    border-bottom: 1px solid #000000; 
+    border-left: none; 
+    border-right: none; 
+}
+        
+    
+.social-media {
+    position: absolute;
+    display: flex; 
+    right: 150px; 
+    top: 0px;
+    color: #fff;
+}      
+
+.social-media a {
+    margin-left: 10px; 
+}
+        
+.nav {
+    position: relative;
+    margin-top: 100px;
+    z-index: 1; 
+    margin-left: 0px;
+}
+        
+.nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0px 25px; 
+    font-size: 18px;
+}     
+
+      
+/* Responsiv design 1650px*/
+@media screen and (max-width: 1650px) {
+    .social-media {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 40px; 
+        text-align: center; 
+        display: inline-block;
+    }
+    
+    .nav {
+        margin-bottom: 20px; 
+    }
+}
+
+
+
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column; 
+        align-items: center; 
+        
+    }
+
+    .nav a {
+        margin: 10px 10px; 
+        
+    }
+
+    .social-media {
+        position: relative; 
+        right: auto; 
+        top: auto; 
+        margin-top: 15px; 
+        text-align: center; 
+        
+    }
+}
+
+
+
+/*Container*/
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container-footer {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.container h2{
+    margin-left:70vw;
+} 
+        
+.section {
+    padding: 10px ;
+    margin-top:0;
+}
+        
+.section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #000000;
+}
+        
+.section p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #000000;
+}
+        
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin: 25px ; 
+}
+        
+.button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+        
+.button:hover {
+    background-color: #444;
+}
+        
+.footer {
+    background-color: #09141f;
+    color: #fff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+}
+        
+
+
+/* Bakgrund sektioner */
+#gallery { 
+    background-color: #ffffff; /* Fallback färg */
+    background-size: cover;
+    background-position: center;
+}
+        
+        
+/* Gallery sektion */
+
+.gallery-item {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Set each gallery item to occupy one-third of the container */
+    box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    padding: 5px; 
+}
+
+.gallery-item img {
+    width: 50%; /* Adjusted width to fill the container */
+    height: auto;
+    position: relative; /* Ensure image stays within its container */
+}
+
+/* Room Descriptions */
+.room-description {
+    position: absolute;
+    top: 0;
+    left: 75%; /* Position at the center horizontally */
+    transform: translateX(-50%); /* Adjust to center the description */
+    text-align: center; /* Center the text */
+}
+
+.room-description h2 {
+    margin: 20%;
+}
+
+.room-description p {
+    font-size: 16px;
+    color: #000000; /* White text color */
+
+}
+
+
+
+/* Responsiv design 870px*/
+@media screen and (max-width: 870px) {
+    
+.gallery-item {
+    width: 100%;
+    text-align: center; 
+    margin-bottom: 20px; 
+}
+
+.gallery-item img {
+    width: 100%;
+}
+
+/* Rumbeskrivning */
+.room-description {
+    position: static; 
+    text-align: center; 
+    margin-top: 20px; /* Space bild och text */
+    left: 0; 
+    transform: none; 
+}
+
+.room-description h2 {
+    font-size: 24px;
+    margin: 10px 0; 
+}
+
+.room-description p {
+    font-size: 14px;
+    margin: 10px 0; 
+}
+
+/* Adjust button */
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+
+.button {
+    padding: 8px 16px;
+    font-size: 14px;
+}
+}
+
+
+/* Footer */
+.footer {
+    padding: 100px 0;
+}
+
+.footer h2{
+    color: #fff;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.roominfo{
+    font-size: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Modal styling */
+.modal {
+    display: none; /* Göm modal som default */
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5); /* Svart opacitet */
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    margin-top: 10%;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+
+/* Styla form */
+    input[type="text"],
+    input[type="email"],
+    select,
+    textarea,
+    input[type="submit"] {
+        width: 100%;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        box-sizing: border-box;
+        margin-top: 6px;
+        margin-bottom: 16px;
+        resize: vertical;
+    }
+
+    input[type="submit"] {
+        background-color: #000;
+        color: white;
+        padding: 12px 20px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+    }
+
+input[type="submit"]:hover {
+    background-color: #444;
+}
+
+/* Kalender styling */
+    .calendar-container {
+        margin-bottom: 16px;
+    }
+
+/*Tackmeddelande*/
+.thank-you-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #fff;
+    padding: 120px;
+    border: 2px solid #333;
+    border-radius: 5px;
+    z-index: 9999;
+}
+
+.close-button {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background: none;
+    border: none;
+    font-size: 40px;
+    cursor: pointer;
+}

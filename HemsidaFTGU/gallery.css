@@ -1,0 +1,216 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    background-color: #351d09; /* Fallback färg */
+    background-image: url('bilder/bild4.jpg'); 
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top; 
+}
+
+.header {
+    background-color: rgba(0, 0, 0, 0.5); 
+    color: #ffffff; 
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+    border-top: 20px solid transparent; 
+    border-bottom: 1px solid #000000; /* Svart botten border */
+    border-left: none; 
+    border-right: none; 
+}
+
+
+.social-media {
+    position: absolute;
+    display: flex; 
+    right: 20px; 
+    top: 0px;
+    color: #fff;
+}
+
+.social-media a {
+    margin-left:  10px; /* Space mellan ikonerna */
+}
+
+.nav {
+    position: relative;
+    margin-top: 100px;
+    z-index: 0;
+    margin-left: 0px;
+}
+
+.nav a {
+    color: #ffffff; 
+    text-decoration: none;
+    margin: 0px 25px; 
+    font-size: 18px;
+    
+}     
+
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.section {
+    padding: 50px 0;
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+}
+
+.section h3 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+
+.section b {
+    font-size: 18px;
+    margin-bottom: 40px;
+    color: #ffffff;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px; 
+}
+
+.button {
+    background-color: #000;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    
+    border-radius: 5px;
+    font-size: 18px;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    
+}
+
+.button:hover {
+    background-color: #444;
+}
+
+.footer {
+    background-color: #09141f;
+    color: #ffffff;
+    padding: 200px 0;
+    text-align: center;
+    position: relative;
+}
+
+.footer h2{
+    font-size: 30px;
+}
+
+
+ul {
+    list-style-type: none;
+}
+
+
+/* Bakgrundbilder för sektioner */
+#home p{
+    color: #ffffff; 
+}
+#home h2 {
+    color: #ffffff; 
+}
+
+#rooms {
+    background-image: url('bilder/bild1.jpg');
+    width:100%;
+}
+
+#gallery {
+    background-image: url('bilder/bild2.jpg');
+}
+
+
+
+/*gallery styling*/
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 30vh;
+    object-fit: cover;
+}
+
+.gallery-item img:hover {
+  cursor: pointer;
+}
+
+/* Grid layout for 3 bilder per row och 3 rows */
+.gallery {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, auto);
+}
+  
+
+/* Responsiv design 1650px*/
+@media screen and (max-width: 1650px) {
+    .social-media {
+        position: relative;
+        right: auto;
+        top: auto;
+        margin-top: 40px; /* Space mellan nav och social media länkar */
+        text-align: center; 
+        display: inline-block;
+    }
+
+.social-media a{
+    margin: 20px;
+}
+
+.nav {
+    margin-bottom: 20px; /* Space botten av nav */
+}
+}
+
+/* Responsiv design 600px*/
+@media screen and (max-width: 600px) {
+    .nav {
+        flex-direction: column; 
+        align-items: center; 
+    }
+
+    .nav a {
+        margin: 10px 10px; /* Margin nav länkar */
+    }
+
+    .gallery {
+        display: flex;
+        overflow: hidden;
+        width: auto;
+        justify-content: center;
+        padding:0 20px;
+    }
+
+    .gallery-item {
+        width: 33.33%;
+        flex: 0 0 auto;
+    }
+}
